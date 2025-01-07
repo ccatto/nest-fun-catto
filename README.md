@@ -7,25 +7,24 @@ nest-fun-catto
 #### Create date Jan 7th 2025
 
 packages:
-GraphQL using @nestjs/graphql and @apollo/server
-Prisma ORM with PostgreSQL configuration
-TypeScript configuration
-ESLint with recommended rules
-Prettier for code formatting
-Jest for testing
-DayJS for date handling
+* GraphQL using @nestjs/graphql and @apollo/server
+* Prisma ORM with PostgreSQL configuration
+* TypeScript configuration
+* ESLint with recommended rules
+* Prettier for code formatting
+* Jest for testing
+* DayJS for date handling
 
-todo to get it running:
+Steps to get it running:
+1. Update .env file to add postgresql db connection string;
+2. yarn install
+3. npx prisma generate
+4. npx prisma db push
+5. yarn start ( || npm run start:dev )
 
-update .env file to add postgresql db connection string;
+Then in nest playground in a browser we can hit: http://localhost:3000/graphql
 
-yarn install
-npx prisma generate
-npx prisma db push
-
-npm run start:dev
-
-query for team:
+Query for team:
 
 ```prisma
 query {
@@ -39,7 +38,7 @@ query {
 }
 ```
 
-team mutations:
+Team mutations:
 
 ```prisma
 mutation {
