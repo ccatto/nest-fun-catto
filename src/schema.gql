@@ -1,0 +1,35 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CreateTeamInput {
+  color: String!
+  name: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Mutation {
+  createTeam(input: CreateTeamInput!): Team!
+  updateTeam(id: Int!, input: UpdateTeamInput!): Team!
+}
+
+type Query {
+  teams: [Team!]!
+}
+
+type Team {
+  color: String!
+  createdAt: DateTime!
+  id: Int!
+  name: String!
+  updatedAt: DateTime!
+}
+
+input UpdateTeamInput {
+  color: String!
+  name: String!
+}
