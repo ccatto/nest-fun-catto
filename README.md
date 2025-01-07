@@ -1,9 +1,10 @@
 # nest-fun-catto
+
 nest-fun-catto
 
-# Nest Fun 
+# Nest Fun
 
-#### Create date Jan 7th 2025 
+#### Create date Jan 7th 2025
 
 packages:
 GraphQL using @nestjs/graphql and @apollo/server
@@ -25,6 +26,7 @@ npx prisma db push
 npm run start:dev
 
 query for team:
+
 ```prisma
 query {
   teams {
@@ -38,6 +40,7 @@ query {
 ```
 
 team mutations:
+
 ```prisma
 mutation {
   createTeam(input: { name: "Red Team", color: "#FF0000" }) {
@@ -55,4 +58,3 @@ mutation {
   }
 }
 ```
-
