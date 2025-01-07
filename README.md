@@ -6,6 +6,8 @@ nest-fun-catto
 
 #### Create date Jan 7th 2025
 
+## This app is a simple Nest.js app with GraphQL & Prisma where it has a working sample model with a resolver && mutation;
+
 packages:
 * GraphQL using @nestjs/graphql and @apollo/server
 * Prisma ORM with PostgreSQL configuration
